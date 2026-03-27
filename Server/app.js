@@ -7,7 +7,15 @@ const cors = require('cors');
 // Initialize Express app
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://uplifttask.netlify.app",
+    "https://uplift-task-1.onrender.com"
+  ],
+  credentials: true
+}));
+
 app.use(express.urlencoded({ extended: true })); // for html form data
 app.use(express.json());
 

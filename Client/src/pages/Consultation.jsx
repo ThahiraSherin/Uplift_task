@@ -36,7 +36,7 @@ const Consultation = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:3001/api/consultation", {
+    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL || "http://localhost:3001"}/api/consultation`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
