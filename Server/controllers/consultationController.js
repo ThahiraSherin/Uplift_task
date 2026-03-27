@@ -1,4 +1,5 @@
-const Consultation = require('../models/Consultation');
+const path = require('path');
+const Consultation = require(path.join(__dirname, '..', 'models', 'Consultation'));
 
 const createConsultation = async (req, res) => {
   try {
