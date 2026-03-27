@@ -28,7 +28,9 @@ const Booking = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const res = await fetch(`${import.meta.env.VITE_API_BASE_URL || "http://localhost:3001"}/api/booking`, {
+    const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
+
+    const res = await fetch(`${BASE_URL}/api/booking`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
