@@ -6,7 +6,7 @@ const cors = require('cors');
 
 // Initialize Express app
 const app = express();
-const cors = require("cors");
+
 
 app.use(cors({
   origin: [
