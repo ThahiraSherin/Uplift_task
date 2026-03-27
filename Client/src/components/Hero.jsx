@@ -45,21 +45,21 @@ const Hero = () => {
       <div className="relative z-10 flex items-center justify-end h-full px-6 md:px-16">
   <div className="text-white max-w-2xl text-right">
 
-    {/* 🔥 BIGGER HEADING */}
+    {/* BIGGER HEADING */}
     <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
       Simply Siddha
     </h1>
 
-    {/* 🔥 BIGGER DESCRIPTION */}
+    {/*  BIGGER DESCRIPTION */}
     <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
       A disciplined lifestyle and right nutrition are the foundations of lifelong health.
     </p>
 
-    {/* 🔥 BUTTONS */}
+    {/*  BUTTONS */}
     <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-end">
 
       {/* Consultation */}
-      <a href="tel:+919876543210" className="w-full sm:w-auto">
+      <a href="tel:+919500407696" className="w-full sm:w-auto">
         <button
         className="w-full bg-green-200 text-green-900 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 rounded-full 
                    cursor-pointer text-sm sm:text-base

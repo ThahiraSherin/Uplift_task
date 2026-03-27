@@ -40,7 +40,7 @@ const TreatmentsSection = () => {
     <section id="treatments" className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="max-w-7xl mx-auto text-center">
 
-        {/* 🔥 HEADING */}
+        {/* HEADING */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl py-6 sm:py-8 md:py-10 text-green-800 mb-2 sm:mb-3 underline decoration-green-700 underline-offset-4 sm:underline-offset-6 md:underline-offset-8">
           Our Treatments
         </h2>
@@ -49,7 +49,7 @@ const TreatmentsSection = () => {
           Natural healing solutions rooted in ancient Siddha wisdom for modern health challenges
         </p>
 
-        {/* 🔥 CARDS */}
+        {/* CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
 
           {treatments.map((treatment, index) => (
@@ -84,7 +84,7 @@ const TreatmentsSection = () => {
                   {treatment.desc}
                 </p>
 
-                {/* 🔥 ITEMS (GREEN TAGS) */}
+                {/* ITEMS (GREEN TAGS) */}
                 <div className="flex flex-wrap gap-2">
                   {treatment.items.map((item, idx) => (
                     <span

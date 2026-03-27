@@ -6,12 +6,12 @@ const Footer = () => {
       
       <div className="max-w-6xl mx-auto text-center">
 
-        {/* 🔥 SERVICES LINE */}
+        {/* SERVICES LINE */}
         <p className="text-xs sm:text-sm md:text-base mb-2 sm:mb-3 opacity-90">
           © 2025 Simply Siddha. All rights reserved.
         </p>
 
-        {/* 🔥 COPYRIGHT */}
+        {/* COPYRIGHT */}
         <p className="text-xs sm:text-sm opacity-75">
           
           Online Siddha Consultation | Personalized Treatment | Doorstep Medicine Delivery

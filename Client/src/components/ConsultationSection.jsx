@@ -10,7 +10,7 @@ const ConsultationSection = () => {
     <section id="consultation" className="scroll-mt-24 bg-gray-100 py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
 
-        {/* 🔥 LEFT CONTENT */}
+        {/* LEFT CONTENT */}
         <div className="md:w-1/2">
 
           {/* Badge */}
@@ -70,7 +70,7 @@ const ConsultationSection = () => {
 
         </div>
 
-        {/* 🔥 RIGHT IMAGE */}
+        {/* RIGHT IMAGE */}
         <div className="md:w-1/2 flex justify-center">
           <img
             src={consultImg}

@@ -20,11 +20,6 @@ const Navbar = () => {
     setOpen(false);
     };
 
-  const handleNavigation = (path) => {
-    navigate(path);
-    setOpen(false);
-  };
-
   return (
     <>
       <div className="sticky top-0 z-50 flex justify-between items-center px-4 sm:px-6 py-3 sm:py-4 shadow-md bg-white">
@@ -80,7 +75,7 @@ const Navbar = () => {
         <div className="hidden lg:flex gap-2 xl:gap-4 items-center">
 
         {/* Call Button */}
-        <a href="tel:+919876543210">
+        <a href="tel:+919500407696">
         <button
            className="flex items-center gap-2 border border-green-600 text-green-600 px-3 xl:px-4 py-2 rounded-full font-medium text-xs xl:text-sm hover:bg-gray-300">
             <FaPhoneAlt className="text-red-600" />

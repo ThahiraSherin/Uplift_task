@@ -48,7 +48,7 @@ const Testimonials = () => {
     <section className="bg-gray-100 py-16 px-4 md:px-10 lg:px-16">
       <div className="max-w-7xl mx-auto text-center">
 
-        {/* 🔥 HEADING */}
+        {/* HEADING */}
         <div className="mb-10">
           <p className="inline-block bg-green-800 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
             TESTIMONIALS
@@ -63,7 +63,7 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* 🔥 CARDS CONTAINER */}
+        {/* CARDS CONTAINER */}
         <div className="flex justify-center items-center gap-6">
 
           {testimonials.map((item, index) => {
@@ -116,7 +116,7 @@ const Testimonials = () => {
           })}
         </div>
 
-        {/* 🔥 DOTS */}
+        {/* DOTS */}
         <div className="flex justify-center mt-8 gap-2">
           {testimonials.map((_, index) => (
             <button

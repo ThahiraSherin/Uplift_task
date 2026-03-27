@@ -8,13 +8,13 @@ const AboutSection = () => {
       <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto">
 
-        {/* 🔥 HEADING */}
+        {/*  HEADING */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-green-900 mb-8 sm:mb-12 md:mb-20 text-center py-8 sm:py-12 md:py-20 underline decoration-green-700 underline-offset-4 sm:underline-offset-6 md:underline-offset-8">
           Siddha Concept
         </h1>
 
        
-        {/* 🔥 CONTENT (TEXT + IMAGE) */}
+        {/* CONTENT */}
         <div className="flex flex-col md:flex-row items-center mb-12 sm:mb-16 md:mb-20 gap-6 sm:gap-8 md:gap-10">
 
         {/* TEXT */}
@@ -46,7 +46,7 @@ const AboutSection = () => {
 
 </div>
 
-        {/* 🔥 TAMIL SLOGAN (HIGHLIGHTED) */}
+        {/* TAMIL SLOGAN (HIGHLIGHTED) */}
         <div className="mt-12 sm:mt-20 md:mt-50 border-l-4 border-green-900 bg-green-900 p-4 sm:p-6 lg:p-8 rounded-lg shadow-sm text-center py-6 sm:py-8 md:py-10">
           
           <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-300 leading-relaxed">

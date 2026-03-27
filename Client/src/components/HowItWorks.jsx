@@ -43,7 +43,7 @@ const HowItWorks = () => {
           Your journey to holistic health in 5 simple steps
         </p>
 
-        {/* 🔥 CARDS GRID */}
+        {/* CARDS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 py-6 sm:py-10">
 
           {steps.map((step, index) => (

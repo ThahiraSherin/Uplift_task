@@ -11,7 +11,8 @@ const app = express();
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://uplifttask.netlify.app"
+    "https://uplifttask.netlify.app",
+    // "https://uplift-task-1.onrender.com"
   ],
   methods: ["GET", "POST"],
   credentials: true

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import test from "../assets/testi.png";
 import testresult from "../assets/testimonial.jpeg";
 
-// 🔥 Slider Images
+// Slider Images
 import digestive from "../assets/herbaldigestive.jpg";
 import pcos from "../assets/herbalpcos1.webp";
 import respiratory from "../assets/herbalrespiratory.jpg";
@@ -38,7 +38,7 @@ const ClinicalSuccess = () => {
 
   const [current, setCurrent] = useState(0);
 
-  // 🔥 Auto Slide
+  // Auto Slide
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % reports.length);
@@ -51,7 +51,7 @@ const ClinicalSuccess = () => {
     <section className="bg-gray-100 py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto text-center">
 
-        {/* 🔥 HEADING */}
+        {/* HEADING */}
         <div className="mb-8 sm:mb-10 text-center py-4 sm:py-6">
           
 
@@ -68,7 +68,7 @@ const ClinicalSuccess = () => {
           </p>
         </div>
 
-        {/* 🔥 TOP IMAGES */}
+        {/* TOP IMAGES */}
         <div className="flex flex-col md:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-12">
           <img
             src={test}
@@ -83,7 +83,7 @@ const ClinicalSuccess = () => {
           />
         </div>
 
-        {/* 🔥 SLIDER */}
+        {/* SLIDER */}
         <div className="relative overflow-hidden">
 
           {reports.map((item, index) => (
@@ -115,23 +115,23 @@ const ClinicalSuccess = () => {
                 {item.title}
             </h3>
 
-        <p className="text-gray-600 text-xs sm:text-sm mb-2 sm:mb-3">
+            <p className="text-gray-600 text-xs sm:text-sm mb-2 sm:mb-3">
             {item.desc}
-        </p>
+            </p>
 
-        <p className="text-green-700 font-bold text-base sm:text-base md:text-base">  
+            <p className="text-green-700 font-bold text-base sm:text-base md:text-base">  
             {item.result}
-        </p>
+            </p>
 
-</div>
-
-              </div>
             </div>
-          ))}
 
+          </div>
         </div>
+      ))}
 
-        {/* 🔥 DOT NAVIGATION */}
+      </div>
+
+        {/* DOT NAVIGATION */}
         <div className="flex justify-center mt-4 sm:mt-6 gap-2 md:gap-3">
           {reports.map((_, index) => (
             <button

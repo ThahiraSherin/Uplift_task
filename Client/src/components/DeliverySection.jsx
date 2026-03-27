@@ -6,7 +6,7 @@ const DeliverySection = () => {
     <section className="bg-white py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-10">
 
-        {/* 🔥 LEFT CONTENT */}
+        {/* LEFT CONTENT */}
         <div className="md:w-1/2 flex flex-col justify-center">
           <p className="inline-block bg-green-900 text-white px-3 md:px-4 py-1 md:py-2 rounded-full text-xs md:text-sm font-bold w-fit">
             SAFE & SECURE
@@ -36,7 +36,7 @@ const DeliverySection = () => {
           </div>
         </div>
 
-        {/* 🔥 RIGHT IMAGE */}
+        {/* RIGHT IMAGE */}
         <div className="md:w-1/2 w-full">
           <div className="relative h-48 sm:h-64 md:h-80 lg:h-96 rounded-xl overflow-hidden">
 
