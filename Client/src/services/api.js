@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001/api";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:3001";
 
 
 export const submitConsultation = async (data) => {
-  const res = await fetch(`${BASE_URL}/consultation`, {
+  const res = await fetch(`${BASE_URL}/api/consultation`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -16,7 +16,7 @@ export const submitConsultation = async (data) => {
 };
 
 export const submitBooking = async (data) => {
-  const res = await fetch(`${BASE_URL}/booking`, {
+  const res = await fetch(`${BASE_URL}/api/booking`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
