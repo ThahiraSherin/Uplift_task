@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Booking = () => {
-  const location = useLocation();
-  const queryParams = new URLSearchParams(location.search);
+  const navigate = useNavigate();
 
   const [form, setForm] = useState({
     name: "",
@@ -43,6 +42,7 @@ const Booking = () => {
     } else {
       alert("Error ❌");
     }
+    navigate("/");
   };
 
   return (
@@ -53,7 +53,7 @@ const Booking = () => {
         className="w-full max-w-2xl"
       >
 
-        {/* 🔥 HEADER */}
+        {/* HEADER */}
         <div className="bg-white rounded-xl shadow-md p-4 sm:p-6 mb-4 sm:mb-6 border-t-8 border-purple-600">
           <h1 className="text-2xl sm:text-3xl font-bold mb-2">
             Patient Intake Form
@@ -63,7 +63,7 @@ const Booking = () => {
           </p>
         </div>
 
-        {/* 🔥 NAME */}
+        {/* NAME */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Full Name <span className="text-red-500">*</span>
@@ -78,7 +78,7 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 AGE */}
+        {/* AGE */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Age <span className="text-red-500">*</span>
@@ -94,12 +94,13 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 PHONE */}
+        {/* PHONE */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Contact Info (Phone) <span className="text-red-500">*</span>
           </label>
           <input
+            type="number"
             name="phone"
             value={form.phone}
             onChange={handleChange}
@@ -109,7 +110,7 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 CHIEF COMPLAINT */}
+        {/* CHIEF COMPLAINT */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Chief Complaint
@@ -123,7 +124,7 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 HISTORY */}
+        {/* HISTORY */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Previous History
@@ -137,7 +138,7 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 ALLERGIES */}
+        {/* ALLERGIES */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Any Allergies
@@ -151,7 +152,7 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 DATE */}
+        {/* DATE */}
         <div className="bg-white p-4 sm:p-6 rounded-xl shadow mb-4 sm:mb-6">
           <label className="block font-medium text-sm sm:text-base mb-2">
             Appointment Date <span className="text-red-500">*</span>
@@ -166,7 +167,7 @@ const Booking = () => {
           />
         </div>
 
-        {/* 🔥 SUBMIT */}
+        {/* SUBMIT */}
         <button className="w-full bg-green-700 text-white py-2.5 sm:py-3 rounded-full text-sm sm:text-lg font-medium hover:bg-green-800 transition mb-6">
           Book Appointment
         </button>
